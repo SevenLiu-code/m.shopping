@@ -13,7 +13,7 @@ $(function(){
 				}
 		});
 	//数量加减
-	$('button.count_r').tap(function(){
+	$('div.count_r').tap(function(){
 		var val = $(this).parent().find('input').val();
 		if ( parseInt(val) == 1 )  { 
 			return 
@@ -22,7 +22,7 @@ $(function(){
 			$(this).parent().find('input').val(val);
 		}
 	});
-	$('button.count_add').tap(function(){
+	$('div.count_add').tap(function(){
 		var val = $(this).parent().find('input').val();
 			val = parseInt(val) + 1;
 			$(this).parent().find('input').val(val);

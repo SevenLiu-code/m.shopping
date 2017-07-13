@@ -55,7 +55,7 @@ div.details_count_d input.counts { border: none; display: block;
 	border-right: 1px solid #898989; border-radius: 0;
  border-left: 1px solid #898989; width: 2rem; text-align: center; 
  font-weight: bold;}
-div.details_count_d>button { display: block; outline: 0; 
+div.details_count_d>div { display: block; outline: 0; 
 	width: 1rem; border-radius: 0.12rem; border: none;
 	background-color: #fff;  font-size: 0.4rem; }
 	/*服务文本*/
