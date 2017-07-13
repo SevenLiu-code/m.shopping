@@ -18,20 +18,20 @@ div.details_slide { position: relative; overflow: hidden;
 div.details_slide>div.details_slide_control { bottom: 0.2667rem; }
 div.details_slide>div.details_slide_control>span { width: 0.24rem;
  height: 0.24rem; margin: 0 0.1067rem !important; 
- border-radius: 999px;  }
+ border-radius: 50%;  }
 div.details_slide_control>span.swiper-pagination-bullet-active { 
 	background-color: #fe0100; }
 /*详情文本*/
 div.details_desc_inner { padding: 0 0.32rem; }
 div.details_title { overflow: hidden; }	
-div.details_title>p { float: left; height: 0.44rem; display: inline-block;
-	line-height: 0.44rem; text-align: center; border-radius: 0.06rem; 
+div.details_title>p { float: left; height: 0.5rem; display: inline-block;
+	line-height: 0.5rem; text-align: center; border-radius: 0.06rem; 
 	padding: 0 0.08rem; margin: 0.066rem 0.3rem 0 0; vertical-align: middle;
 	background-color: #fe0100; color: #fff; font-size: 14px; }
 [data-dpr="2"] div.details_title>p { font-size: 28px; }	
 [data-dpr="3"] div.details_title>p { font-size: 42px; }	
 
-div.details_title>h3 { color: #000; font-size: 16px; }
+div.details_title>h3 { color: #000; font-size: 16px; line-height: .58rem; }
 [data-dpr="2"] div.details_title>h3 { font-size: 32px; }
 [data-dpr="3"] div.details_title>h3 { font-size: 48px; }
 
@@ -51,12 +51,12 @@ div.details_count_d { display: flex; display: -webkit-flex;
 	border: 1px solid #898989; border-radius: 0.12rem;
 	justify-content: space-between; text-align: center;
 	font-size: 0.3733rem; height: .9rem; }	
-div.details_count_d input.counts { border: none; display: inline-block;
+div.details_count_d input.counts { border: none; display: block;
 	border-right: 1px solid #898989; border-radius: 0;
  border-left: 1px solid #898989; width: 50%; text-align: center; 
  font-weight: bold;}
-div.details_count_d>button { outline: 0; width: 25%; 
-	border-radius: 0.12rem; border: none;
+div.details_count_d>button { display: block; outline: 0; 
+	width: 25%; border-radius: 0.12rem; border: none;
 	background-color: #fff;  font-size: 0.4rem; }
 	/*服务文本*/
 div.details_service { overflow: hidden; padding-top: 0.1333rem;
@@ -69,7 +69,7 @@ ul.details_service_txt>li { line-height: 0.48rem; }
 ul.details_service_txt span { display: inline-block; width: 37%;  
  padding: 0 0.2667rem; vertical-align: middle; color: #727272; }
 ul.details_service_txt span>i { display: inline-block; 
- width: 0.1333rem; height: 0.1333rem; border-radius: 999px; 
+ width: 0.1333rem; height: 0.1333rem; border-radius: 50%; 
  margin-right: 0.08rem; background-color: #fe0100; 
  vertical-align: middle; box-sizing:border-box }
  /*悬浮按钮*/
