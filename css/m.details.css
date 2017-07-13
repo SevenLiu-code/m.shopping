@@ -20,21 +20,68 @@ div.details_slide_control>span.swiper-pagination-bullet-active {
 	background-color: #fe0100; }
 /*详情文本*/
 div.details_desc_inner { padding: 0 0.32rem; }
-div.details_title { padding: 0.2667rem 0; overflow: hidden;  }	
+div.details_title { overflow: hidden; }	
 div.details_title>p { float: left; height: 0.44rem; display: inline-block;
 	line-height: 0.44rem; text-align: center; border-radius: 0.06rem; 
 	padding: 0 0.08rem; margin: 0.066rem 0.3rem 0 0; vertical-align: baseline;
 	background-color: #fe0100; color: #fff; font-size: 14px; }
 [data-dpr="2"] div.details_title>p { font-size: 28px; }	
 [data-dpr="3"] div.details_title>p { font-size: 42px; }	
+
 div.details_title>h3 { color: #000; font-size: 16px; }
 [data-dpr="2"] div.details_title>h3 { font-size: 32px; }
 [data-dpr="3"] div.details_title>h3 { font-size: 48px; }
 
+p.details_price { color: #fe0100; }
+p.details_price>strong { font-size: 20px; }
+[data-dpr="2"] p.details_price>strong { font-size: 40px; }
+[data-dpr="3"] p.details_price>strong { font-size: 60px; }
 
-
-
-
+p.details_slogn { color: #717171; font-size: 0.32rem; }
+p.details_slogn span { padding-right: 0.2rem; }
+div.details_count { display: flex; display: -webkit-flex; 
+	justify-content: space-between;  }
+p.details_count_txt { height: .9rem; line-height: .9rem;
+	margin-left: .2rem; color: #3e3c3a; font-size: 0.3733rem; }	
+div.details_count_d { display: flex; display: -webkit-flex;
+	width: 2.5rem; line-height: .9rem; margin-right: 0.6rem;  
+	border: 1px solid #3d3d39; border-radius: 0.12rem;
+	justify-content: space-between; text-align: center;
+	font-size: 0.3733rem; height: .9rem; }	
+div.details_count_d input.counts { border: none; border-right: 1px solid #3d3d39;
+ border-left: 1px solid #3d3d39; width: 50%; text-align: center; 
+ font-weight: bold;}
+div.details_count_d>button { outline: 0; width: 25%; 
+	background-color: #fff; border: none; font-size: 0.4rem; }
+	/*服务文本*/
+div.details_service { overflow: hidden; padding-top: 0.1333rem;
+	 color: #3e3c3a; }	
+p.details_service_tit { float: left; font-size: 14px; }
+[data-dpr="2"] p.details_service_tit { font-size: 28px; }
+[data-dpr="3"] p.details_service_tit { font-size: 42px; }
+ul.details_service_txt { float: left; width: 85%;  }
+ul.details_service_txt>li { line-height: 0.48rem; }
+ul.details_service_txt span { display: inline-block; width: 37%;  
+ padding: 0 0.2667rem; vertical-align: middle; color: #727272; }
+ul.details_service_txt span>i { display: inline-block; 
+ width: 0.1333rem; height: 0.1333rem; border-radius: 50%; 
+ margin-right: 0.0667rem; background-color: #fe0100; 
+ vertical-align: middle; }
+ /*悬浮按钮*/
+ ul.details_btn { position: fixed; bottom: 0;
+  width: 100%; overflow: hidden; }
+ ul.details_btn>li { float: left; width: 50%; }
+ ul.details_btn>li>a { display: block; text-align: center;
+ 	height: 1.1rem; line-height: 1.1rem; color: #fff; font-size: 16px; }
+ [data-dpr="2"]  ul.details_btn>li>a { font-size: 32px; }
+ [data-dpr="3"]  ul.details_btn>li>a { font-size: 48px; }
+ li.details_tel { background-color: #fe8500; }
+ li.details_buy { background-color: #fe0100; }
+ li.details_tel>a>i{ display: inline-block; width: 0.9067rem; height: 0.72rem;
+ 	background: url(../images/icon/details_tel.png) no-repeat; 
+ 	background-size: 100%; vertical-align: middle; margin-right: 0.1rem; }
+div.details_title, p.details_price,
+p.details_slogn, div.details_count, div.details_service {margin: 0.2667rem 0; } 
 
 
 
