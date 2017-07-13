@@ -27,4 +27,7 @@ $(function(){
 			val = parseInt(val) + 1;
 			$(this).parent().find('input').val(val);
 	});
+	$('div.details_count_d>input').focus(function(){
+		$(this).blur();
+	})
 })
