@@ -1,9 +1,9 @@
 /*详情页头部*/
-ul.switch_inner { position: absolute; top: -2px; right: 0; left: 0;
+ul.switch_inner { position: absolute; top: 0; right: 0; left: 0;
  width: 26%; display: flex; display: -webkit-flex; 
  margin: 0 auto; justify-content: space-between; color: #898989; }
-[data-dpr="2"] ul.switch_inner { top: -4px; } 
-[data-dpr="3"] ul.switch_inner { top: -6px; }
+/*[data-dpr="2"] ul.switch_inner { top: -4px; } 
+[data-dpr="3"] ul.switch_inner { top: -6px; }*/
 ul.switch_inner li.current { color: #3d3d39;
 	border-bottom: 2px solid #3d3d39; }
 [data-dpr="2"] ul.switch_inner li.current { border-bottom: 4px solid #3d3d39; }	
@@ -46,11 +46,12 @@ p.details_count_txt { height: .9rem; line-height: .9rem;
 	margin-left: .2rem; color: #3e3c3a; font-size: 0.3733rem; }	
 div.details_count_d { display: flex; display: -webkit-flex;
 	width: 2.5rem; line-height: .9rem; margin-right: 0.6rem;  
-	border: 1px solid #3d3d39; border-radius: 0.12rem;
+	border: 1px solid #898989; border-radius: 0.12rem;
 	justify-content: space-between; text-align: center;
 	font-size: 0.3733rem; height: .9rem; }	
-div.details_count_d input.counts { border: none; border-right: 1px solid #3d3d39;
- border-left: 1px solid #3d3d39; width: 50%; text-align: center; 
+div.details_count_d input.counts { border: none; display: inline-block;
+	border-right: 1px solid #898989;
+ border-left: 1px solid #898989; width: 50%; text-align: center; 
  font-weight: bold;}
 div.details_count_d>button { outline: 0; width: 25%; 
 	background-color: #fff; border: none; font-size: 0.4rem; }
@@ -66,7 +67,7 @@ ul.details_service_txt span { display: inline-block; width: 37%;
  padding: 0 0.2667rem; vertical-align: middle; color: #727272; }
 ul.details_service_txt span>i { display: inline-block; 
  width: 0.1333rem; height: 0.1333rem; border-radius: 50%; 
- margin-right: 0.0667rem; background-color: #fe0100; 
+ margin-right: 0.08rem; background-color: #fe0100; 
  vertical-align: middle; }
  /*悬浮按钮*/
  ul.details_btn { position: fixed; bottom: 0;
