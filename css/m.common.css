@@ -1,0 +1,12 @@
+/*公共头部*/
+header.common_head { position: relative;
+	 height: 1.1rem; line-height: 1.1rem;  }
+header.common_head a.head_return { position: absolute; z-index: 3;
+ 	height: 1.1rem; padding: 0 0.0667rem; margin-left: 0.3733rem;
+ 	line-height: 1.1rem; font-size: 30px; font-weight: bold; }
+[data-dpr="2"] header.common_head a.head_return { font-size: 60px; }
+[data-dpr="3"] header.common_head a.head_return { font-size: 90px; }
+header.common_head .head_content { position: absolute; width: 100%; 
+	top: 0; height: 1.1rem; font-size: 18px; border-bottom: 1px solid #cacaca; }	 	
+[data-dpr="2"] header.common_head .head_content { font-size: 32px; }
+[data-dpr="3"] header.common_head .head_content { font-size: 48px; }	
