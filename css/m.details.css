@@ -24,7 +24,7 @@ div.details_desc_inner { padding: 0 0.32rem; }
 div.details_title { overflow: hidden; }	
 div.details_title>p { float: left; height: 0.44rem; display: inline-block;
 	line-height: 0.44rem; text-align: center; border-radius: 0.06rem; 
-	padding: 0 0.08rem; margin: 0.066rem 0.3rem 0 0; vertical-align: baseline;
+	padding: 0 0.08rem; margin: 0.066rem 0.3rem 0 0; vertical-align: middle;
 	background-color: #fe0100; color: #fff; font-size: 14px; }
 [data-dpr="2"] div.details_title>p { font-size: 28px; }	
 [data-dpr="3"] div.details_title>p { font-size: 42px; }	

@@ -1,5 +1,5 @@
 /*公共头部*/
-header.common_head { position: relative; border-bottom: 1px solid #000; 
+header.common_head { position: relative; border-bottom: 1px solid #cacaca;
 	 height: 1.1rem; line-height: 1.1rem;  }
 header.common_head a.head_return { position: absolute; z-index: 3;
  	height: 1.1rem; padding: 0 0.0667rem; margin-left: 0.3733rem;
