@@ -50,7 +50,7 @@ div.details_count_d { display: flex; display: -webkit-flex;
 	justify-content: space-between; text-align: center;
 	font-size: 0.3733rem; height: .9rem; }	
 div.details_count_d input.counts { border: none; display: inline-block;
-	border-right: 1px solid #898989;
+	border-right: 1px solid #898989; border-radius: 0;
  border-left: 1px solid #898989; width: 50%; text-align: center; 
  font-weight: bold;}
 div.details_count_d>button { outline: 0; width: 25%; 
