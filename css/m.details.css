@@ -11,7 +11,8 @@ ul.switch_inner li.current { color: #3d3d39;
 /*商品介绍*/
 div.details_slide li { width: 100%; }
 div.details_slide li>img { width: 100%; }
-div.details_slide { position: relative; border-bottom: 1px solid #cacaca; }
+div.details_slide { position: relative; overflow: hidden;
+	border-bottom: 1px solid #cacaca; }
 div.details_slide>div.details_slide_control { bottom: 0.2667rem; }
 div.details_slide>div.details_slide_control>span { width: 0.24rem;
  height: 0.24rem; margin: 0 0.1067rem !important; }
@@ -20,9 +21,9 @@ div.details_slide_control>span.swiper-pagination-bullet-active {
 /*详情文本*/
 div.details_desc_inner { padding: 0 0.32rem; }
 div.details_title { padding: 0.2667rem 0; overflow: hidden;  }	
-div.details_title>p { float: left; height: 0.44rem; 
+div.details_title>p { float: left; height: 0.44rem; display: inline-block;
 	line-height: 0.44rem; text-align: center; border-radius: 0.06rem; 
-	padding: 0 0.08rem; margin: 0.066rem 0.3rem 0 0; 
+	padding: 0 0.08rem; margin: 0.066rem 0.3rem 0 0; vertical-align: baseline;
 	background-color: #fe0100; color: #fff; font-size: 14px; }
 [data-dpr="2"] div.details_title>p { font-size: 28px; }	
 [data-dpr="3"] div.details_title>p { font-size: 42px; }	
