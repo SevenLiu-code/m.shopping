@@ -26,7 +26,7 @@ div.details_desc_inner { padding: 0 0.32rem; }
 div.details_title { overflow: hidden; }	
 div.details_title>p { float: left; height: 0.5rem; display: inline-block;
 	line-height: 0.5rem; text-align: center; border-radius: 0.06rem; 
-	padding: 0 0.08rem; margin: 0.066rem 0.3rem 0 0; vertical-align: middle;
+	padding: 0 0.08rem; margin: 0.05rem 0.28rem 0 0; vertical-align: middle;
 	background-color: #fe0100; color: #fff; font-size: 14px; }
 [data-dpr="2"] div.details_title>p { font-size: 28px; }	
 [data-dpr="3"] div.details_title>p { font-size: 42px; }	
@@ -47,16 +47,16 @@ div.details_count { display: flex; display: -webkit-flex;
 p.details_count_txt { height: .9rem; line-height: .9rem;
 	margin-left: .2rem; color: #3e3c3a; font-size: 0.3733rem; }	
 div.details_count_d { display: flex; display: -webkit-flex;
-	width: 2.5rem; line-height: .9rem; margin-right: 0.6rem;  
+	line-height: .9rem; margin-right: 0.6rem;  
 	border: 1px solid #898989; border-radius: 0.12rem;
 	justify-content: space-between; text-align: center;
 	font-size: 0.3733rem; height: .9rem; }	
 div.details_count_d input.counts { border: none; display: block;
 	border-right: 1px solid #898989; border-radius: 0;
- border-left: 1px solid #898989; width: 50%; text-align: center; 
+ border-left: 1px solid #898989; width: 2rem; text-align: center; 
  font-weight: bold;}
 div.details_count_d>button { display: block; outline: 0; 
-	width: 25%; border-radius: 0.12rem; border: none;
+	width: 1rem; border-radius: 0.12rem; border: none;
 	background-color: #fff;  font-size: 0.4rem; }
 	/*服务文本*/
 div.details_service { overflow: hidden; padding-top: 0.1333rem;
