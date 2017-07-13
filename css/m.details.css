@@ -1,4 +1,13 @@
+/*商品列表*/
+div.goods_list_item { width: 100%; margin-bottom: 0.6667rem; }
+div.goods_list_item:last-child { margin-bottom: 0; }
+div.goods_list_item>a { display: block; }
+div.goods_list_item img { width: 100%; }
+section.goods_list_slogn>p { text-align: center; color: #b5b5b6; 
+	line-height: 1.6533rem; }
 /*详情页头部*/
+header.details_head { background-color: #fff; }
+header.details_head>a.head_return { color: #000; }
 ul.switch_inner { position: absolute; top: 0; right: 0; left: 0;
  width: 26%; display: flex; display: -webkit-flex; 
  margin: 0 auto; justify-content: space-between; color: #898989; }

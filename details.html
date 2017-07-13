@@ -21,15 +21,74 @@
     <script type="text/javascript" src="./js/m.touch.js"></script>
 </head>
 <body>
-    <!-- 头部返回 -->
-    <header class="common_head">
+    <!-- 商品详情头部 -->
+	<header class="details_head common_head">
         <a href="" class="head_return icon-angle-left"></a>
-        <div class="head_content">
-            确认订单
+        <div class="switch_con head_content">
+            <ul class="switch_inner">
+                <li class="current box_s">商品</li>
+                <li class="box_s">详情</li>
+            </ul>
         </div>
     </header>
-    <section class="confirm_order">
-        <div class="_order_user"></div>
-    </section>
+    <!-- 商品详情主体 -->
+        <!-- 商品介绍 -->
+    <section class="details_main details_desc_con">
+        <div class="details_slide swiper-details">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <img src="./images/test/details_slide_1.png" alt="">
+                </li>
+                <li class="swiper-slide">
+                    <img src="./images/test/details_slide_2.png" alt="">
+                </li>
+                <li class="swiper-slide">
+                    <img src="./images/test/details_slide_3.png" alt="">
+                </li>
+            </ul>
+             <div class="details_slide_control swiper-pagination"></div>
+        </div> 
+        <div class="details_desc_inner">
+            <div class="details_title">
+                <p>自营</p>
+                <h3>苏吝府泰国茉莉香米 原装进口泰国大米包邮新米10kg 长粒香</h3>
+            </div>
+            <p class="details_price">￥<strong>108</strong>.00</p>
+            <p class="details_slogn">
+                <span>【倍儿牛自营】</span><span>物美价廉</span><span>物所超值</span><span>品质卓越</span><span>新颖潮流</span>
+            </p>
+            <div class="details_count">
+                <p class="details_count_txt">请选择数量</p>
+                <div class="details_count_d">
+                    <div class="count_r">-</div>
+                    <input type="tel" class="counts" readonly="readonly" value="1"></input>
+                    <div class="count_add">+</div>
+                </div>
+            </div>
+            <div class="details_service">
+                <p class="details_service_tit">服务：</p>
+                <ul class="details_service_txt">
+                    <li>
+                    <span><i></i>30天无忧退货</span><span><i></i>48小时快速退款</span></li>
+                    <li><span><i></i>满88免邮费</span><span><i></i>倍儿牛自营品牌</span></li>
+                </ul>
+            </div>
+        </div> 
+    </section> 
+    <section class="details_main details_img_con">
+        <div class="details_img_box">
+            <img src="./images/test/details_img_1.png" alt="">
+        </div>
+    </section>  
+    <ul class="details_btn">
+        <li class="details_tel">
+            <a href="tel:4000510700">
+                <i></i>400-0510-700
+            </a>
+        </li>
+        <li class="details_buy">
+            <a href="">立即购买</a>
+        </li>
+    </ul> 
 </body>
 </html>
