@@ -15,7 +15,7 @@ div.details_slide { position: relative; overflow: hidden;
 	border-bottom: 1px solid #cacaca; }
 div.details_slide>div.details_slide_control { bottom: 0.2667rem; }
 div.details_slide>div.details_slide_control>span { width: 0.24rem;
- height: 0.24rem; margin: 0 0.1067rem !important; }
+ height: 0.24rem; margin: 0 0.1067rem !important; border-radius: 50%; }
 div.details_slide_control>span.swiper-pagination-bullet-active { 
 	background-color: #fe0100; }
 /*详情文本*/
