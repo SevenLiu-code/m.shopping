@@ -4,10 +4,11 @@ ul.switch_inner { position: absolute; top: 0; right: 0; left: 0;
  margin: 0 auto; justify-content: space-between; color: #898989; }
 /*[data-dpr="2"] ul.switch_inner { top: -4px; } 
 [data-dpr="3"] ul.switch_inner { top: -6px; }*/
+ul.switch_inner li { height: 1.1rem; line-height: 1.1rem; }
 ul.switch_inner li.current { color: #3d3d39;
-	border-bottom: 2px solid #3d3d39; }
-[data-dpr="2"] ul.switch_inner li.current { border-bottom: 6px solid #3d3d39; }	
-[data-dpr="3"] ul.switch_inner li.current { border-bottom: 9px solid #3d3d39; }
+	border-bottom: 2px solid #3d3d39;  }
+[data-dpr="2"] ul.switch_inner li.current { border-bottom: 4px solid #3d3d39; }	
+[data-dpr="3"] ul.switch_inner li.current { border-bottom: 6px solid #3d3d39; }
 /*商品介绍*/
 section.details_desc_con { margin-bottom: 1.2rem; }
 div.details_slide li { width: 100%; }
@@ -17,7 +18,7 @@ div.details_slide { position: relative; overflow: hidden;
 div.details_slide>div.details_slide_control { bottom: 0.2667rem; }
 div.details_slide>div.details_slide_control>span { width: 0.24rem;
  height: 0.24rem; margin: 0 0.1067rem !important; 
- border-radius: 50%; box-sizing: border-box }
+ border-radius: 999px;  }
 div.details_slide_control>span.swiper-pagination-bullet-active { 
 	background-color: #fe0100; }
 /*详情文本*/
@@ -68,7 +69,7 @@ ul.details_service_txt>li { line-height: 0.48rem; }
 ul.details_service_txt span { display: inline-block; width: 37%;  
  padding: 0 0.2667rem; vertical-align: middle; color: #727272; }
 ul.details_service_txt span>i { display: inline-block; 
- width: 0.1333rem; height: 0.1333rem; border-radius: 50%; 
+ width: 0.1333rem; height: 0.1333rem; border-radius: 999px; 
  margin-right: 0.08rem; background-color: #fe0100; 
  vertical-align: middle; box-sizing:border-box }
  /*悬浮按钮*/
