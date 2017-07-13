@@ -87,8 +87,10 @@ ul.details_service_txt span>i { display: inline-block;
  	background-size: 100%; vertical-align: middle; margin-right: 0.1rem; }
 div.details_title, p.details_price,
 p.details_slogn, div.details_count, div.details_service {margin: 0.2667rem 0; } 
-
-
+/*商品详情图片*/
+section.details_img_con { display: none; }
+div.details_img_box { width: 100%; }
+div.details_img_box>img { width: 100%; }
 
 
 
