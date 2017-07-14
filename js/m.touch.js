@@ -29,5 +29,16 @@ $(function(){
 	});
 	$('div.details_count_d>input').focus(function(){
 		$(this).blur();
-	})
+	});
+// 确认订单页
+	// 修改已有收货信息
+    $('div.contact_desc').tap(function(){
+    	$('.part_hidde').css({'display': 'none'});
+    	$('.manage_contact_head, .manage_contact_info').css({'display': 'block'});
+    });
+    // 修改已有收货信息返回
+    $('header.manage_contact_head a.head_return').tap(function(){
+    	$('.manage_contact_head, .manage_contact_info').css({'display': 'none'});
+    	$('.part_hidde').css({'display': 'block'});	
+    });
 })
