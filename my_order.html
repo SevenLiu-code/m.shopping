@@ -22,75 +22,62 @@
 </head>
 <body>
     <!-- 头部返回 -->
-    <header class="common_head part_hidde">
+    <header class="common_head">
         <a href="" class="head_return icon-angle-left"></a>
         <div class="head_content">
-            确认订单
+            我的订单
         </div>
     </header>
-    <header class="common_head manage_contact_head" style="display: none;">
-        <a href="javascript:;" class="head_return icon-angle-left"></a>
-        <div class="head_content">
-            管理收货地址
-        </div>
-    </header>
-    <section class="confirm_order part_hidde">
-        <div class="contact_desc">
-            <div class="_order_user box_s">王小二</div>
-            <div class="_order_txt">
-                <div class="_order_tel">18888666688</div>
-                <p class="_order_address">江苏省无锡市惠山区盛岸西路588号倍儿牛二手车中国总部</p>
-            </div>
-            <div class="_order_icon icon-angle-right"></div>
-        </div>   
-        <div class="_order_inform">
-            <div class="goods_s_img">
-                <img src="./images/test/details_slide_1.png" alt="">
-            </div>
-            <div class="goods_desc">
-                <h3>苏吝府泰国茉莉香米 原装进口泰国大米包邮新米10kg</h3>
-                <div class="price">
-                    ¥<span>108.00</span>
+    <section class="my_order">
+        <ul class="my_order_list">
+            <li class="my_order_item">
+                <div class="my_order_nub">
+                   <p>订单编号：<span>18888</span></p>
+                   <button>取消订单</button> 
                 </div>
-            </div>
-            <div class="goods_count box_s">×<span>1</span></div>
-        </div>
-        <div class="goods_price_sum confirm_order_common">
-            <p>商品总数</p>
-            <div class="_price_txt">¥<span>108.00</span></div>
-        </div>
-        <div class="transport_price confirm_order_common">
-            <p>运费</p>
-            <div class="_price_txt">¥<span>10.00</span></div>
-        </div>
-        <ul class="confirm_order_btn">
-            <li class="price_sum box_s">
-                <p>合计：<span class="price_sum_txt">¥<i>118</i>.00</span></p>
+                <div class="_order_inform my_order_inform">
+                    <div class="goods_s_img">
+                        <img src="./images/test/details_slide_1.png" alt="">
+                    </div>
+                    <div class="goods_desc">
+                        <h3>苏吝府泰国茉莉香米 原装进口泰国大米包邮新米10kg</h3>
+                    </div> 
+                    <div class="loading_pay box_s">
+                        待付款
+                    </div>  
+                </div>
+                <div class="loading_pay_func">
+                    <p>应付款：<span>¥108.00</span></p>
+                    <a href="">付款</a>
+                </div>
             </li>
-            <li class="buy">
-                <a href="">立即支付</a>
+            <li class="my_order_item">
+                <div class="my_order_nub">
+                   <p>订单编号：<span>18888</span></p>
+                </div>
+                <div class="_order_inform my_order_inform">
+                    <div class="goods_s_img">
+                        <img src="./images/test/details_slide_1.png" alt="">
+                    </div>
+                    <div class="goods_desc">
+                        <h3>苏吝府泰国茉莉香米 原装进口泰国大米包邮新米10kg</h3>
+                    </div> 
+                    <div class="already_pay box_s">
+                        <img src="./images/icon/already_pay.png" alt="">
+                    </div>  
+                </div>
             </li>
         </ul>
     </section>
-    <section class="manage_contact_info common_section" style="display: none;">
-        <ul class="manage_contact_info_list common_list">
-            <li class="manage_user">
-                <input type="text" value="王小二">
-            </li>
-            <li class="manage_tel">
-                <input type="tel" value="18888666688">
-            </li>
-            <li class="manage_address">
-                <input type="text" readonly="readonly" value="江苏 无锡 惠山">
-            </li>
-            <li class="manage_address_details">
-                <input type="text" value="盛岸西路588号倍儿牛二手车中国总部">
-            </li>
-        </ul>
-        <div class="manage_contact_info_btn common_btm">
-            <button>保存收货地址</button>
+    <div class="tip_mask"></div>
+    <div class="tip_box">
+        <div class="tip_box_img">
+            <img src="./images/icon/tip_box_img.png" alt="">
         </div>
-    </section>
-    <div class="mask"></div>
+        <p class="tip_box_txt">确定取消购物订单？</p>
+        <a href="" class="tip_box_btn">确定</a>
+        <a href="" class="tip_box_btn">取消</a>
+    </div>
+
 </body>
 </html>

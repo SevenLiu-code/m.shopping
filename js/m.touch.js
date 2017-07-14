@@ -37,12 +37,24 @@ $(function(){
     	$('.manage_contact_head, .manage_contact_info, div.mask').css({'display': 'block'});
     	setTimeout(function(){
     		$('div.mask').hide();
-    	}, 350)
+    	}, 350);
     });
     // 修改已有收货信息返回
-    $('header.manage_contact_head a.head_return').on('touchend' ,function(e){
+    $('header.manage_contact_head a.head_return').tap(function(e){
     	$('.manage_contact_head, .manage_contact_info').css({'display': 'none'});
-    	$('.part_hidde').css({'display': 'block'});	
-    	if(e.type == "touchend") e.preventDefault();
+    	$('.part_hidde, div.mask').css({'display': 'block'});	
+    	setTimeout(function(){
+    		$('div.mask').hide();
+    	}, 350);
     });
+
+//选择支付页
+	$('ul.pay_mothod_list>li').tap(function(){
+		if ( $(this).hasClass('current') ) {
+			return false;
+		}else {
+			$('ul.pay_mothod_list>li').removeClass('current');
+			$(this).addClass('current');
+		}
+	})    
 })
