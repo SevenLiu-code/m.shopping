@@ -211,16 +211,21 @@ div.already_pay>img { display: block; width: 0.9333rem;
 	height: 0.9333rem; margin: 0 auto; }	
 /*提示弹出框*/
 div.tip_mask { position: fixed; top: 0; bottom: 0; left: 0; right: 0;
-	background-color: #000; opacity: .4;  }
+	background-color: #000; opacity: .4; }
 div.tip_box { position: fixed; top: 0; bottom: 0; left: 0; right: 0;
-	width: 75%; height: 50%; margin: auto; background-color: #fff; }
+	width: 75%; height: 50%; margin: auto; background-color: #fff;
+	border-radius: 0.2667rem;  }
 div.tip_box_img { width: 2.4533rem; margin: 0 auto; 
 	padding: 1.2rem 0 0.8rem 0; }	
 div.tip_box_img>img { width: 100%; display: block; }
 p.tip_box_txt { color: #3d3b39; text-align: center; 
-		font-size: 0.3733rem; }
-a.tip_box_btn { display: block; }		
-
+		font-size: 0.3733rem; margin-bottom: 0.5333rem; }
+a.tip_box_btn { display: block; width: 76%; line-height: 1rem; 
+	font-size: 0.4rem; border-radius: 0.5333rem; text-align: center;
+	margin: 0.4rem auto 0.4rem auto; 
+	border: 1px solid #898989; color: #898989;}		
+a.tip_box_btn.return { background-color: #26A2FF; 
+	border: none; color: #fff; }
 
 
 
