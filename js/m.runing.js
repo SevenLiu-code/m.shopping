@@ -15,5 +15,5 @@ $(function(){
 		}, //绑定数据源相关字段 id对应valueTo的value属性输出 name对应trigger的value属性输出
 		'type': 1, //数据源类型
 		'data': LAreaData //数据源
-});
+	});
 })
