@@ -34,11 +34,15 @@ $(function(){
 	// 修改已有收货信息
     $('div.contact_desc').tap(function(){
     	$('.part_hidde').css({'display': 'none'});
-    	$('.manage_contact_head, .manage_contact_info').css({'display': 'block'});
+    	$('.manage_contact_head, .manage_contact_info, div.mask').css({'display': 'block'});
+    	setTimeout(function(){
+    		$('div.mask').hide();
+    	}, 350)
     });
     // 修改已有收货信息返回
-    $('header.manage_contact_head a.head_return').tap(function(){
+    $('header.manage_contact_head a.head_return').on('touchend' ,function(e){
     	$('.manage_contact_head, .manage_contact_info').css({'display': 'none'});
     	$('.part_hidde').css({'display': 'block'});	
+    	if(e.type == "touchend") e.preventDefault();
     });
 })
