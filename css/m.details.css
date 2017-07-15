@@ -1,6 +1,6 @@
 
 /*商品列表*/
-section.goods_list { background-color: #fff; }
+section.goods_list { background-color: #eee; }
 div.goods_list_item_kind { display: flex; display: -webkit-flex; 
 	align-items: center; padding: 0.2rem 0.4rem; }
 div.goods_list_item_kind>div.icon { width: 0.8rem; height: 0.8rem;
@@ -15,7 +15,8 @@ div.goods_list_desc_t { display: flex; display: -webkit-flex;
 div.goods_list_tit { padding-top: 0.1333rem; color: #898989; font-size: 0.4rem; }
  p.goods_list_logn {  color: #3d3d39; }
  p.goods_list_price { color: #fe0100; }
-div.goods_list_item { width: 100%; margin-bottom: 0.3rem; }
+div.goods_list_item { width: 100%; margin-bottom: 0.3rem; 
+	background-color: #fff; }
 div.goods_list_item:last-child { margin-bottom: 0; }
 div.goods_img_box { width: 100%; }
 div.goods_list_item img { width: 100%; }

@@ -38,6 +38,11 @@ $(function(){
 					$(this).parent().find('li.current').removeClass('current');
 					$(this).addClass('current');
 					$('section.details_main').hide().eq($(this).index()).show();
+					if ( $('section.details_img_con').is(":hidden") ) {
+						document.getElementById('details_video').pause();	
+					}else {
+						document.getElementById('details_video').play();	
+					}
 					 h = $('section.details_main').eq($(this).index()).height();
 					$('.car_show_main_box').height(h);
 				}
