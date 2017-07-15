@@ -62,7 +62,7 @@ $(function(){
 			val = parseInt(val) + 1;
 			$(this).parent().find('input').val(val);
 	});
-	$('div.details_count_d>input, div.manage_address>input').focus(function(){
+	$('div.details_count_d>input, div.manage_address>input, input#manage_addr').focus(function(){
 		$(this).blur();
 	});
 // 确认订单页
