@@ -133,7 +133,8 @@ div.confirm_order_common { display: flex; display: -webkit-flex;
 		background-color: #fff; font-size: 0.4rem; color: #3C3A38;
 		border-bottom: 1px solid #E3E3E3; }
 div.transport_price { border-bottom: none; }		
-ul.confirm_order_btn { position: fixed; left: 0; right: 0; bottom: 0; }
+ul.confirm_order_btn { position: fixed; left: 0; right: 0; bottom: 0;
+	box-shadow: 0 0 50px 0 #999; }
 ul.confirm_order_btn>li.price_sum { float: left; width: 65%;
 	 height: 1.1rem; line-height: 1.1rem; text-align: right;
 	 padding: 0 0.3rem; background-color: #fff; }
@@ -219,7 +220,7 @@ div.tip_box_img { width: 2.4533rem; margin: 0 auto;
 	padding: 1.2rem 0 0.8rem 0; }	
 div.tip_box_img>img { width: 100%; display: block; }
 p.tip_box_txt { color: #3d3b39; text-align: center; 
-		font-size: 0.3733rem; margin-bottom: 0.5333rem; }
+		font-size: 0.3733rem; margin-bottom: 0.6rem; }
 a.tip_box_btn { display: block; width: 76%; line-height: 1rem; 
 	font-size: 0.4rem; border-radius: 0.5333rem; text-align: center;
 	margin: 0.4rem auto 0.4rem auto; 
