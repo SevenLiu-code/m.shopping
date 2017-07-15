@@ -18,33 +18,50 @@
     </script>
     <script type="text/javascript" src="./js/zepto.min.js"></script>
     <script type="text/javascript" src="./js/swiper.jquery.min.js"></script>
+    <script type="text/javascript" src="./js/LAreaData1.js"></script>
+    <script type="text/javascript" src="./js/LAreaData2.js"></script>
+    <script type="text/javascript" src="./js/LArea.js"></script>
     <script type="text/javascript" src="./js/m.runing.js"></script>
     <script type="text/javascript" src="./js/m.touch.js"></script>
+
 </head>
 <body>
     <!-- 头部返回 -->
-    <header class="common_head">
+    <header class="common_head part_hidde">
         <a href="javascript:history.go(-1);" class="link_referrer head_return icon-angle-left"></a>
         <div class="head_content">
-            选择支付方式
+            新建收件地址
         </div>
     </header>
-    <section class="pay_mothod common_section">
-        <ul class="pay_mothod_list common_list">
-            <li class="current">
-                <div class="pay_mothod_bg pay_mothod_zfb"></div>
-                <p class="pay_mothod_txt">支付宝支付</p>
-                <div class="pay_mothod_icon"></div>
-            </li>
-            <li class="">
-                <div class="pay_mothod_bg pay_mothod_wx"></div>
-                <p class="pay_mothod_txt">微信</p>
-                <div class="pay_mothod_icon"></div>
-            </li>
-        </ul>
-        <div class="pay_mothod_btn common_btm">
-            <a href="">确定</a>
-        </div>
+    <section class="creat_contact_info common_section">
+        <form action="" method="post" onsubmit="return creat_address();">
+            <ul class="creat_contact_info_list common_list">
+                <li class="creat_user">
+                    <input type="text" name="name" value="" placeholder="请填入收件人姓名">
+                </li>
+                <li class="creat_tel">
+                    <input type="tel" name="mobile" value="" maxlength="11" placeholder="请填入收件人手机号码">
+                </li>
+                <li class="creat_address">
+                    <input type="text" id="manage_addr" readonly="readonly" name="area" placeholder="请选择省市区域">
+                    <input id="value1" type="hidden" value="20,234,504">
+                </li>
+                <li class="creat_address_details">
+                    <input type="text" name="address_details" value="" placeholder="请填入收件人详细地址">
+                </li>
+            </ul>
+            <div class="creat_contact_info_btn common_btm">
+                <button type="submit">提交</button>
+            </div>
+        </form>
     </section>
+    <div class="tip_mask"></div>
+    <div class="tip_box">
+        <div class="tip_box_img">
+            <img src="./images/icon/tip_box_img.png" alt="">
+        </div>
+        <p class="tip_box_txt"></p>
+        <a href="javascript:;" class="tip_box_btn return box_s">返回</a>
+    </div>
 </body>
-</html>
+</html>    

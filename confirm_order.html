@@ -18,9 +18,9 @@
     </script>
     <script type="text/javascript" src="./js/zepto.min.js"></script>
     <script type="text/javascript" src="./js/swiper.jquery.min.js"></script>
-    <script src="js/LAreaData1.js"></script>
-    <script src="js/LAreaData2.js"></script>
-    <script src="js/LArea.js"></script>
+    <script type="text/javascript" src="./js/LAreaData1.js"></script>
+    <script type="text/javascript" src="./js/LAreaData2.js"></script>
+    <script type="text/javascript" src="./js/LArea.js"></script>
     <script type="text/javascript" src="./js/m.runing.js"></script>
     <script type="text/javascript" src="./js/m.touch.js"></script>
 
@@ -34,48 +34,60 @@
         </div>
     </header>
     <header class="common_head manage_contact_head" style="display: none;">
-        <a href="javascript:;" class="head_return icon-angle-left"></a>
+        <a href="javascript:history.go(-1);" class="link_referrer head_return icon-angle-left"></a>
         <div class="head_content">
             管理收货地址
         </div>
     </header>
     <section class="confirm_order part_hidde">
-        <div class="contact_desc">
-            <div class="_order_user box_s">王小二</div>
-            <div class="_order_txt">
-                <div class="_order_tel">18888666688</div>
-                <p class="_order_address">江苏省无锡市惠山区盛岸西路588号倍儿牛二手车中国总部</p>
-            </div>
-            <div class="_order_icon icon-angle-right"></div>
-        </div>   
-        <div class="_order_inform">
-            <div class="goods_s_img">
-                <img src="./images/test/details_slide_1.png" alt="">
-            </div>
-            <div class="goods_desc">
-                <h3>苏吝府泰国茉莉香米 原装进口泰国大米包邮新米10kg</h3>
-                <div class="price">
-                    ¥<span>108.00</span>
+        <form action="" method="post">
+            <div class="contact_desc">
+                <div class="_order_user box_s">王小二</div>
+                <input type="hidden" class="_order_user" value="王小二" name="name">
+                <div class="_order_txt">
+                    <div class="_order_tel">18888666688</div>
+                    <input type="hidden" class="_order_tel" value="18866999987" name="mobile">
+                    <p class="_order_address">江苏省无锡市惠山区盛岸西路588号倍儿牛二手车中国总部</p>
+                    <input type="hidden" class="_order_address" value="江苏省无锡市惠山区盛岸西路588号倍儿牛二手车中国总部" name="address">
+                </div>
+                <div class="_order_icon icon-angle-right"></div>
+            </div>   
+            <div class="_order_inform">
+                <div class="goods_s_img">
+                    <img src="./images/test/details_slide_1.png" alt="">
+                </div>
+                <div class="goods_desc">
+                    <h3>苏吝府泰国茉莉香米 原装进口泰国大米包邮新米10kg</h3>
+                    <div class="price">
+                        ¥<span>108.00</span>
+                    </div>
+                </div>
+                <div class="goods_count box_s">
+                 ×<span>1</span>
                 </div>
             </div>
-            <div class="goods_count box_s">×<span>1</span></div>
-        </div>
-        <div class="goods_price_sum confirm_order_common">
-            <p>商品合计</p>
-            <div class="_price_txt">¥<span>108.00</span></div>
-        </div>
-        <div class="transport_price confirm_order_common">
-            <p>运费</p>
-            <div class="_price_txt">¥<span>10.00</span></div>
-        </div>
-        <ul class="confirm_order_btn">
-            <li class="price_sum box_s">
-                <p>合计：<span class="price_sum_txt">¥<i>118</i>.00</span></p>
-            </li>
-            <li class="buy">
-                <a href="">立即支付</a>
-            </li>
-        </ul>
+            <div class="goods_price_sum confirm_order_common">
+                <p>商品合计</p>
+                <div class="_price_txt">¥<span>108.00</span></div>
+                <input type="hidden" value="108.00" name="goods_sum_price">
+            </div>
+            <div class="transport_price confirm_order_common">
+                <p>运费</p>
+                <div class="_price_txt">¥<span>10.00</span></div>
+                <input type="hidden" value="10.00" name="transport_price">
+            </div>
+            <ul class="confirm_order_btn">
+                <li class="price_sum box_s">
+                    <p>合计：
+                        <span class="price_sum_txt">¥<i>118</i>.00</span>
+                        <input type="hidden" value="118.00" name="price_sum">
+                    </p>
+                </li>
+                <li class="buy">
+                    <button type="submit">立即支付</button>
+                </li>
+            </ul>
+        </form> 
     </section>
     <section class="manage_contact_info common_section" style="display: none;">
         <ul class="manage_contact_info_list common_list">
