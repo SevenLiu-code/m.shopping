@@ -185,6 +185,7 @@ div.common_btm>button, div.common_btm>a, div.common_btm>input { display: block; 
   background-color: transparent; z-index: 6; display: none; }	
 
 /*选择支付页面 */ 
+section.pay_mothod.common_section { margin-top: .8rem; }
 ul.pay_mothod_list>li { display: flex; display: -webkit-flex; 
 	align-items: center; }
 ul.pay_mothod_list>li>div.pay_mothod_bg { width: 0.96rem; height: 0.96rem;
