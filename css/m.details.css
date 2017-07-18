@@ -179,7 +179,8 @@ div.common_btm { position: absolute; bottom: -2rem; left: 0;
 div.common_btm>button, div.common_btm>a, div.common_btm>input { display: block; width: 100%; 
  height: 1.1rem; outline: 0; border: none; background-color: #E94A35;
  border-radius: 0.15rem; font-size: 0.4267rem; color: #fff;  text-align: center;
- line-height: 1.1rem; }
+ line-height: 1.1rem; appearance: none; -moz-appearance: none;
+        -webkit-appearance: none;}
  	/*遮罩 */
  div.mask { position: fixed; top: 0; bottom: 0; left: 0; right: 0;
   background-color: transparent; z-index: 6; display: none; }	
@@ -193,19 +194,24 @@ ul.pay_mothod_list>li>div.pay_mothod_bg { width: 0.96rem; height: 0.96rem;
 ul.pay_mothod_list>li>div.pay_mothod_zfb { background-image: url(../images/icon/pay_zfb.png); }
 ul.pay_mothod_list>li>div.pay_mothod_wx { background-image: url(../images/icon/pay_wx.png); }
 ul.pay_mothod_list>li>p.pay_mothod_txt { font-size: 0.4267rem; color: #3d3b39;
-	width: 72%; text-indent: 1.2em; }
-ul.pay_mothod_list>li>div.pay_mothod_icon { width: 1rem; height: 1rem; 
+	width: 80%; text-indent: 1.2em; }
+ul.pay_mothod_list>li>div.pay_mothod_icon { width: 0.4rem; height: 0.4rem; 
 	background-repeat: no-repeat; background-size: 100%; 
-	background-image: url(../images/icon/pay_d.png); }
+	background-image: url(../images/icon/pay_current_icon.png); }
 /*ul.pay_mothod_list>li.current>div.pay_mothod_icon {
 	background-image: url(../images/icon/pay_current_icon.png); }*/
 /*支付成功*/
-section.pay_seccess { position: absolute; top: 0; bottom: 0;
+section.pay_seccess, section.pay_fail { position: absolute; top: 0; bottom: 0;
  left: 0; right: 0; padding-top: 1rem;
  background-color: #fff; }
-div.pay_smile { width: 4.5rem; height: 5.2rem; margin: 0 auto;
- background: url(../images/icon/pay_nn.png) no-repeat; 
- background-size: 100%;}
+div.pay_seccess_icon>img { 
+	display: block; width: 4.5rem; height: 5.2rem; 
+	margin: 0 auto;
+}
+div.pay_fail_icon>img { 
+	display: block; width: 4.5rem; height: 4.5rem; 
+	margin: 0 auto;
+}
 p.pay_seccess_txt { margin-top: 0.5333rem; text-align: center;
   font-size: 0.48rem; color: #333; } 
 /*我的订单页*/	

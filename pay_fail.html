@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <title>倍儿牛商城</title>
+	<meta charset="UTF-8"/>
+	<title>倍儿牛商城</title>
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
@@ -51,60 +51,32 @@
         article,aside, details, figcaption, figure, footer, header, menu, nav, section { display:block; }
         /*reset end*/
    </style>
-   <style>  
-        html { background-color: #f5f5f5; }  
-        section.common_section { margin: 0.5333rem 0;
-            background-color: #fff; position: relative; }
-        ul.common_list { width: 100%; /**/ }
-        ul.common_list>li { margin-left: 0.4rem; 
-         padding: 0.4rem 0.4rem 0.4rem 0; border-bottom: 1px solid #E3E3E3; }
-        ul.common_list>li:last-child { border-bottom: none; }
-        ul.common_list>li>input { width: 100%; border: none;
-         outline: 0; font-size: 0.4rem; color: #3d3b39; }
-        div.common_btm { position: absolute; bottom: -1.8rem; left: 0;
-         right: 0; margin: 0 0.5333rem; border-radius: 0.15rem;  }
-        div.common_btm>button, div.common_btm>a, div.common_btm>input { display: block; width: 100%; 
-         height: 1.1rem; outline: 0; border: none; background-color: #E94A35;
-         border-radius: 0.15rem; font-size: 0.4267rem; color: #fff;  text-align: center;
-         line-height: 1.1rem; appearance: none; -moz-appearance: none;
-                -webkit-appearance: none; }
-
-        /*选择支付页面*/ 
-        section.pay_mothod.common_section { margin-top: .8rem; }
-        ul.pay_mothod_list>li { display: flex; display: -webkit-flex; 
-            align-items: center; }
-        ul.pay_mothod_list>li>div.pay_mothod_bg { width: 1rem; height: 1rem; margin-left: 0.3rem;  }
-        ul.pay_mothod_list>li>div.pay_mothod_zfb>img { width: 100%; }
-        ul.pay_mothod_list>li>p.pay_mothod_txt { font-size: 0.4267rem; color: #3d3b39;
-            width: 78.5%; text-indent: 1em; }
-        ul.pay_mothod_list>li>div.pay_mothod_icon { width: 0.4rem; height: 0.4rem;  }
-        ul.pay_mothod_list>li>div.pay_mothod_icon>img { width: 100%; }
+   <style>
+        /*支付成功*/
+        section.pay_seccess, section.pay_fail { position: absolute; top: 0; bottom: 0;
+         left: 0; right: 0; padding-top: 1rem;
+         background-color: #fff; }
+        div.pay_seccess_icon>img { 
+            display: block; width: 4.5rem; height: 5.2rem; 
+            margin: 0 auto;
+        }
+        div.pay_fail_icon>img { 
+            display: block; width: 4.2rem; height: 4.2rem; 
+            margin: 0 auto;
+        }
+        p.pay_seccess_txt { margin-top: 0.5333rem; text-align: center;
+          font-size: 0.48rem; color: #333; } 
    </style>
     <script type="text/javascript">
         !function(N,M){function L(){var a=I.getBoundingClientRect().width;a/F>540&&(a=540*F);var d=a/10;I.style.fontSize=d+"px",D.rem=N.rem=d}var K,J=N.document,I=J.documentElement,H=J.querySelector('meta[name="viewport"]'),G=J.querySelector('meta[name="flexible"]'),F=0,E=0,D=M.flexible||(M.flexible={});if(H){console.warn("将根据已有的meta标签来设置缩放比例");var C=H.getAttribute("content").match(/initial\-scale=([\d\.]+)/);C&&(E=parseFloat(C[1]),F=parseInt(1/E))}else{if(G){var B=G.getAttribute("content");if(B){var A=B.match(/initial\-dpr=([\d\.]+)/),z=B.match(/maximum\-dpr=([\d\.]+)/);A&&(F=parseFloat(A[1]),E=parseFloat((1/F).toFixed(2))),z&&(F=parseFloat(z[1]),E=parseFloat((1/F).toFixed(2)))}}}if(!F&&!E){var y=N.navigator.userAgent,x=(!!y.match(/android/gi),!!y.match(/iphone/gi)),w=x&&!!y.match(/OS 9_3/),v=N.devicePixelRatio;F=x&&!w?v>=3&&(!F||F>=3)?3:v>=2&&(!F||F>=2)?2:1:1,E=1/F}if(I.setAttribute("data-dpr",F),!H){if(H=J.createElement("meta"),H.setAttribute("name","viewport"),H.setAttribute("content","initial-scale="+E+", maximum-scale="+E+", minimum-scale="+E+", user-scalable=no"),I.firstElementChild){I.firstElementChild.appendChild(H)}else{var u=J.createElement("div");u.appendChild(H),J.write(u.innerHTML)}}N.addEventListener("resize",function(){clearTimeout(K),K=setTimeout(L,300)},!1),N.addEventListener("pageshow",function(b){b.persisted&&(clearTimeout(K),K=setTimeout(L,300))},!1),"complete"===J.readyState?J.body.style.fontSize=12*F+"px":J.addEventListener("DOMContentLoaded",function(){J.body.style.fontSize=12*F+"px"},!1),L(),D.dpr=N.dpr=F,D.refreshRem=L,D.rem2px=function(d){var c=parseFloat(d)*this.rem;return"string"==typeof d&&d.match(/rem$/)&&(c+="px"),c},D.px2rem=function(d){var c=parseFloat(d)/this.rem;return"string"==typeof d&&d.match(/px$/)&&(c+="rem"),c}}(window,window.lib||(window.lib={}));
     </script>
 </head>
 <body>
-    <section class="pay_mothod common_section">
-         <form method="post" action="{{route('goods_pay')}}">
-            <ul class="pay_mothod_list common_list">
-                <li class="current">
-                    <div class="pay_mothod_bg pay_mothod_zfb">
-                        <img src="./images/icon/pay_zfb.png" alt="">
-                    </div>
-                    <p class="pay_mothod_txt">支付宝支付</p>
-                    <input type="hidden" name="goods_id" value="{{$order_id}}">
-                    <input type="hidden" name="total_money" value="{{$total_money}}">
-                    <input type="hidden" name="_token" value="{{csrf_token()}}">
-                    <div class="pay_mothod_icon">
-                        <img src="./images/icon/pay_current_icon.png" alt="">
-                    </div> 
-                </li>
-            </ul>
-            <div class="pay_mothod_sub common_btm">
-                <input type="submit" value="确定">
-            </div>
-         </form>    
+    <section class="pay_fail">
+        <div class="pay_fail_icon">
+            <img src="./images/icon/pay_x.png" alt="">
+        </div>
+        <p class="pay_seccess_txt">抱歉，付款失败</p>
     </section>
 </body>
 </html>
