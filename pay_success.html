@@ -23,39 +23,9 @@
     <script type="text/javascript" src="./js/m.touch.js"></script>
 </head>
 <body>
-    <!-- 头部返回 -->
-    <header class="common_head">
-        <a href="javascript:history.go(-1);" class="link_referrer head_return icon-angle-left"></a>
-        <div class="head_content">
-            选择支付方式
-        </div>
-    </header>
-    <section class="pay_mothod common_section">
-        <!-- <ul class="pay_mothod_list common_list">
-            <li class="current">
-                <div class="pay_mothod_bg pay_mothod_zfb"></div>
-                <p class="pay_mothod_txt">支付宝支付</p>
-            </li>
-        </ul>
-        <div class="pay_mothod_btn common_btm">
-            <a href="">确定</a>
-        </div> -->
-
-         <form method="post" action="{{route('goods_pay')}}">
-            <ul class="pay_mothod_list common_list">
-                <li class="current">
-                    <div class="pay_mothod_bg pay_mothod_zfb"></div>
-                    <p class="pay_mothod_txt">支付宝支付</p>
-                    <input type="hidden" name="goods_id" value="{{$order_id}}">
-                    <input type="hidden" name="total_money" value="{{$total_money}}">
-                    <input type="hidden" name="_token" value="{{csrf_token()}}">
-                    <div class="pay_mothod_icon"></div> 
-                </li>
-            </ul>
-            <div class="pay_mothod_sub common_btm">
-                <input type="submit" value="确定">
-            </div>
-         </form>    
+    <section class="pay_seccess">
+        <div class="pay_smile"></div>
+        <p class="pay_seccess_txt">恭喜，付款成功</p>
     </section>
 </body>
 </html>
