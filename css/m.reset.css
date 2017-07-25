@@ -22,7 +22,7 @@ input,textarea,select,a{font-family:inherit;font-size:inherit;font-weight:inheri
 :focus{outline:0;}/*获取焦点时外边框为0*/
 a{text-decoration:none;outline:none;}
 textarea{resize:none;}
-input[type=number],input[type=button]{-webkit-appearance:none}/*防止按钮在苹果手机上变色*/
+input[type=number],input[type=button], button{-webkit-appearance:none}/*防止按钮在苹果手机上变色*/
  input[type=text],input[type=tel],input[type=number],input[type=email],input[type=file]{
  outline: none;
  }

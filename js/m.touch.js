@@ -65,6 +65,12 @@ $(function(){
 	$('div.details_count_d>input, div.manage_address>input, input#manage_addr').focus(function(){
 		$(this).blur();
 	});
+
+	//推荐app下载
+	$('div.details_push_btn>button').tap(function(){
+		$('section.details_push_tip').show();
+	})
+
 // 确认订单页
 	// 修改已有收货信息
     $('div.contact_desc').tap(function(){

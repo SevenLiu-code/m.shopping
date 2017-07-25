@@ -84,7 +84,43 @@ div.details_count_d input.counts { border: none; display: block;
 div.details_count_d>div { display: block; outline: 0; 
 	width: 1rem; border-radius: 0.12rem; border: none;
 	background-color: #fff;  font-size: 0.4rem; }
-	/*服务文本*/
+
+/*推荐APP下载*/
+section.details_push { position: fixed; left: 0; right: 0; bottom: 0;
+  height: 6.0267rem; }
+div.details_push_content { width: 100%; height: 100%; overflow: hidden;
+ background: url(../images/icon/details_push.jpg) no-repeat;
+ background-size: 100%; } 
+div.details_push_content>p { padding-left: 0.32rem; }
+div.details_push_content>p.txt_top { margin-top: 1.36rem; 
+	font-size: 0.3467rem; color: #fff; }
+div.details_push_content>p.txt_center { font-size: 0.48rem; color: #fff; }
+div.details_push_content>p.txt_center>span { color: #ffcc08; }
+div.details_push_content>p.txt_bottom { font-size: 0.4267rem; 
+	line-height: .7rem; color: #ffcc08;  }
+div.details_push_line { margin: 0.3rem 0 0 0.32rem; width: 0.6rem; 
+  height: 0.0667rem; background-color: #fff; }
+div.details_push_btn { position: absolute; bottom: 0.2667rem; 
+ left: 0; right: 0;  } 
+div.details_push_btn>button { display: block; width: 92%; 
+	height: 1rem; margin: 0 auto; border-radius: 0.1333rem;
+	background-color: #ffcc08; font-size: 0.3733rem; color: #111;  }
+section.details_push_tip { position: fixed; top: 0; bottom: 0;
+ left: 0; right: 0; background-color: rgba(0,0,0,.5);
+ z-index: 998; display: none; }
+div.details_push_tip_content { position: absolute; z-index: 999;
+ height: 3.7333rem; width: 7.2rem; top: 0; bottom: 0; left: 0;
+ right: 0; margin: auto; background-color: #fff; 
+ border-radius: 0.2rem; text-align: center; }	
+div._push_tip_top>p{ padding-top: 0.75rem; font-size: 0.3733rem; color: #3e3a39; }
+div._push_tip_top>h2 { padding-top: 0.2rem; font-size: 0.5067rem; color: #fe0000; }
+div._push_tip_link { height: 1.12rem; position: absolute; bottom: 0;
+ left: 0; right: 0; line-height: 1.12rem; border-top: 1px solid #d7d7d7; } 
+div._push_tip_link>a { display: block; font-size: 0.4rem;
+ color: #3e3a39; height: 100%; }
+
+
+/*服务文本*/
 div.details_service { overflow: hidden; padding-top: 0.1333rem;
 	 color: #3e3c3a; }	
 p.details_service_tit { float: left; font-size: 0.3733rem; }
