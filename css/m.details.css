@@ -87,12 +87,12 @@ div.details_count_d>div { display: block; outline: 0;
 
 /*推荐APP下载*/
 section.details_push { position: fixed; left: 0; right: 0; bottom: 0;
-  height: 6.0267rem; z-index: 997; }
+  height: 4.08rem; z-index: 997; }
 div.details_push_content { width: 100%; height: 100%; overflow: hidden;
  background: url(../images/icon/details_push.jpg) no-repeat;
  background-size: 100%; } 
 div.details_push_content>p { padding-left: 0.32rem; }
-div.details_push_content>p.txt_top { margin-top: 1.36rem; 
+div.details_push_content>p.txt_top { margin-top: .36rem; 
 	font-size: 0.3467rem; color: #fff; }
 div.details_push_content>p.txt_center { font-size: 0.48rem; color: #fff; }
 div.details_push_content>p.txt_center>span { color: #ffcc08; }
