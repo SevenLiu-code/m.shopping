@@ -19,29 +19,29 @@ function creat_address(){
 					$('div.tip_box>.tip_box_txt').html('手机号码填写错误');
 					$('div.tip_mask, div.tip_box').css({'display':'block'});
 					return false;
-				}	
+				}
 			}else if( addr_details == '' || addr_details.length < 3){
 				$('div.tip_box>.tip_box_txt').html('请填写详细收货地址');
 				$('div.tip_mask, div.tip_box').css({'display':'block'});
 				return false;
-			}else { 
+			}else {
 				return true;
 			}
 	}
 $(function(){
-// 商品详情页	
+// 商品详情页
 	//详情主体切换
 	$('ul.switch_inner>li').tap(function(){
-		if ($(this).hasClass("current")) { 
+		if ($(this).hasClass("current")) {
 					return false;
 				}else {
 					$(this).parent().find('li.current').removeClass('current');
 					$(this).addClass('current');
 					$('section.details_main').hide().eq($(this).index()).show();
 					if ( $('section.details_img_con').is(":hidden") ) {
-						document.getElementById('details_video').pause();	
+						document.getElementById('details_video').pause();
 					}else {
-						document.getElementById('details_video').play();	
+						document.getElementById('details_video').play();
 					}
 					 h = $('section.details_main').eq($(this).index()).height();
 					$('.car_show_main_box').height(h);
@@ -50,9 +50,9 @@ $(function(){
 	//数量加减
 	$('div.count_r').tap(function(){
 		var val = $(this).parent().find('input').val();
-		if ( parseInt(val) == 1 )  { 
-			return 
-		} else { 
+		if ( parseInt(val) == 1 )  {
+			return
+		} else {
 			val = parseInt(val) - 1;
 			$(this).parent().find('input').val(val);
 		}
@@ -69,8 +69,19 @@ $(function(){
 	//推荐app下载
 	$('div.details_push_btn>button').tap(function(){
 		$('section.details_push_tip').show();
+	});
+	$('.details_push_change span.close').tap(function(){
+				$(this).addClass('hidden');
+				$(this).parents('.details_push').css({'right': '-100%'});
+				$(this).parent().find('span.open').removeClass('hidden').addClass('details_push_change_fixed');
+				$('section.details_push_desc_con').css({'paddingBottom': '1.2rem'});
+	});
+	$('.details_push_change span.open').tap(function(){
+				$(this).addClass('hidden');
+				$(this).parents('.details_push').css({'right': 0});
+				$(this).parent().find('span.close').removeClass('hidden details_push_change_fixed');
+				$('section.details_push_desc_con').css({'paddingBottom': '4.2rem'});
 	})
-
 // 确认订单页
 	// 修改已有收货信息
     $('div.contact_desc').tap(function(){
@@ -83,7 +94,7 @@ $(function(){
     // 修改已有收货信息返回
     $('header.manage_contact_head a.head_return').tap(function(e){
     	$('.manage_contact_head, .manage_contact_info').css({'display': 'none'});
-    	$('.part_hidde, div.mask').css({'display': 'block'});	
+    	$('.part_hidde, div.mask').css({'display': 'block'});
     	setTimeout(function(){
     		$('div.mask').hide();
     	}, 350);
@@ -116,7 +127,7 @@ $(function(){
 			}else{
 				$('div.tip_box>.tip_box_txt').html('手机号码填写错误');
 				$('div.tip_mask, div.tip_box').css({'display':'block'});
-			}	
+			}
 		}else if( addr_details == '' || addr_details.length < 3){
 			$('div.tip_box>.tip_box_txt').html('请填写详细收货地址');
 			$('div.tip_mask, div.tip_box').css({'display':'block'});
@@ -141,5 +152,5 @@ $(function(){
 //弹框关闭
 	$('a.tip_box_btn.return').tap(function(){
 		$('div.tip_mask, div.tip_box').css({'display':'none'});
-	})	
+	})
 })
