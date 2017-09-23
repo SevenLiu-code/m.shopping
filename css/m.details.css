@@ -86,12 +86,12 @@ div.details_count_d>div { display: block; outline: 0;
 	background-color: #fff;  font-size: 0.4rem; }
 
 /*推荐APP下载*/
-section.details_push_desc_con { padding-bottom: 4.2rem; transition: all .3s;}
+section.details_push_desc_con { padding-bottom: 4.2rem; }
 section.details_push { position: fixed; width: 100%; right: 0; bottom: 0;
-  height: 5.41rem; z-index: 997; transition: all .3s; }
-section.details_push .details_push_inner { height: 4.06rem; }
+ z-index: 997; transition: all .3s; }
+section.details_push .details_push_inner { height: 4.08rem; }
 .details_push_change { padding: 0 .13rem; font-size: 0; }
-.details_push_change span { float: right; display: inline-block; width: 1.12rem; height: 1.33rem; }
+.details_push_change span { float: right; display: inline-block; width: .71rem; height: .8rem; }
 .details_push_change span.close { background: url(../images/icon/delete.png) no-repeat center top;
      background-size: 100%; }
 .details_push_change span.open { background: url(../images/icon/up.png) no-repeat center top;

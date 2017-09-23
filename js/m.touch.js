@@ -1,4 +1,3 @@
-
 function creat_address(){
 		var $box = $('section.creat_contact_info');
 		var name = $box.find('li.creat_user>input').val();
@@ -72,15 +71,15 @@ $(function(){
 	});
 	$('.details_push_change span.close').tap(function(){
 				$(this).addClass('hidden');
-				$(this).parents('.details_push').css({'right': '-100%'});
-				$(this).parent().find('span.open').removeClass('hidden').addClass('details_push_change_fixed');
-				$('section.details_push_desc_con').css({'paddingBottom': '1.2rem'});
+				$('.section.details_push_desc_con').css({'padding-bottom': '1.2rem'});
+				$(this).parents('.details_push').animate({'right': '-100%'}, 300, function(){
+					$(this).parent().find('span.open').removeClass('hidden').addClass('details_push_change_fixed');
+				});
 	});
 	$('.details_push_change span.open').tap(function(){
 				$(this).addClass('hidden');
 				$(this).parents('.details_push').css({'right': 0});
 				$(this).parent().find('span.close').removeClass('hidden details_push_change_fixed');
-				$('section.details_push_desc_con').css({'paddingBottom': '4.2rem'});
 	})
 // 确认订单页
 	// 修改已有收货信息
