@@ -98,8 +98,7 @@ section.details_push .details_push_inner { height: 4.08rem; }
     background-size: 100%; }
 .details_push_change span.hidden { display: none; }
 .details_push_change span.details_push_change_fixed {
-			position: fixed; right: -3%;
- }
+			position: fixed; right: -3%; bottom: 4.08rem; }
 div.details_push_content { width: 100%; height: 100%; overflow: hidden;
  background: url(../images/icon/details_push.jpg) no-repeat center center;
  background-size: 100%; }
